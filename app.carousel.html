@@ -1,16 +1,22 @@
-<ngb-carousel *ngIf="images">
+
+<ngb-carousel *ngIf="images" class="w-100 border rounded border-dark" style="max-height: 25%;margin-top: -12%;border-width: 5px!important">
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper">
-      <img [src]="images[0]" alt="Random first slide">
+      <div alt="Random first slide" class="w-100 d-flex flex-column justify-content-center align-items-center" style="height: 100vh;width: 100vh;background-color: gray;">
+        <div class="text-light text-center">20 ans</div>
+        <div class="text-light text-center">28/04/2000</div>
+        <div class="text-light text-center">Angres, 62143</div>
+        <div class="text-light text-center">julien.domont123@gmail.com</div>
+      </div>
     </div>
     <div class="carousel-caption">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Information</h3>
+      
     </div>
   </ng-template>
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper">
-      <img [src]="images[1]" alt="Random second slide">
+      <div alt="Random first slide" class="w-100" style="height: 100vh;width: 100vh;background-color: gray;"></div>
     </div>
     <div class="carousel-caption">
       <h3>Second slide label</h3>
@@ -19,7 +25,7 @@
   </ng-template>
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper">
-      <img [src]="images[2]" alt="Random third slide">
+      <div alt="Random first slide" class="w-100" style="height: 100vh;width: 100vh;background-color: gray;"></div>
     </div>
     <div class="carousel-caption">
       <h3>Third slide label</h3>
