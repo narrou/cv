@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'header-cv',
   templateUrl: './app.header.html',

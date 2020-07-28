@@ -1,35 +1,36 @@
-
-<ngb-carousel *ngIf="images" class="w-100 rounded border-top border-dark" style="max-height: 25%;margin-top: -20vh">
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <div alt="Random first slide" class="w-100 d-flex flex-column justify-content-center align-items-center" style="height: 100vh;width: 100vh;background-color: #6c757d!important;">
-        <div class="text-light text-center">20 ans</div>
-        <div class="text-light text-center">28/04/2000</div>
-        <div class="text-light text-center">Angres, 62143</div>
-        <div class="text-light text-center">julien.domont123@gmail.com</div>
+<mat-card style="margin-top: -20vh;">
+  <ngb-carousel *ngIf="images" class="w-100 rounded border-top border-dark" style="max-height: 50%">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+          <div alt="Random first slide" class="w-100 d-flex flex-column rounded" style="height: 100vh;width: 100vh;background-color: #6c757d!important;">
+            <div style="margin-top:20vh; margin-left: 10vh;"></div>
+              <div class="d-flex flex-row" style="margin-left: 10vh;">
+                <mat-card-title class="text-light">A PROPOS</mat-card-title>
+                <icon-svg-facebook class="ml-auto" style="margin-right: 50%;"></icon-svg-facebook>
+              </div>
+              <div style="height: 10px;width: 100px;background-color: crimson; margin-left: 10vh"></div>
+          </div>
+        </div>
+        
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <div alt="Random first slide" class="w-100 rounded d-flex flex-column rounded" style="height: 100vh;width: 100vh;background-color: #6c757d!important;">
+          <mat-card-title class="text-light" style="margin-top:20vh; margin-left: 10vh;">EXPERIENCE</mat-card-title>
+          <div style="height: 10px;width: 100px;background-color: crimson; margin-left: 10vh"></div>
+          </div>
       </div>
-    </div>
-    <div class="carousel-caption">
-      <h3>Information</h3>
-      
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <div alt="Random first slide" class="w-100" style="height: 100vh;width: 100vh;background-color: #6c757d!important;"></div>
-    </div>
-    <div class="carousel-caption">
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <div alt="Random first slide" class="w-100" style="height: 100vh;width: 100vh;background-color: #6c757d!important;"></div>
-    </div>
-    <div class="carousel-caption">
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </div>
-  </ng-template>
-</ngb-carousel>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <div alt="Random first slide" class="w-100 rounded d-flex flex-column rounded" style="height: 100vh;width: 100vh;background-color: #6c757d!important;">
+                <mat-card-title class="text-light" style="margin-top:20vh; margin-left: 10vh;">COMPETENCES</mat-card-title>
+          <div style="height: 10px;width: 100px;background-color: crimson; margin-left: 10vh"></div>
+          </div>
+      </div>
+      <div class="carousel-caption">
+
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</mat-card>
