@@ -10,7 +10,8 @@ import { IconSvgExample } from './app.icons'
 import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { MglTimelineModule } from 'angular-mgl-timeline';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {HttpClientModule} from '@angular/common/http'
     MatCardModule,
     BrowserAnimationsModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MglTimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent, NgbdCarouselBasicComponent, AppHeaderComponent, ProfilePictureComponent]

@@ -18,5 +18,7 @@ export class IconSvgExample {
         'linkedin', sanitizer.bypassSecurityTrustResourceUrl('../assets/linkedin.svg'));
     iconRegistry.addSvgIcon(
         'github', sanitizer.bypassSecurityTrustResourceUrl('../assets/github.svg'));
+    iconRegistry.addSvgIcon(
+        'twitter', sanitizer.bypassSecurityTrustResourceUrl('../assets/twitter.svg'));
   }
 }
